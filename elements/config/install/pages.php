@@ -13,6 +13,11 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
         <pages>
             <page name="News" path="/news" filename="" pagetype="news_index"
                   template="<?php echo $data['niPageTemplate']; ?>" description="">
+                <attributes>
+                    <attributekey handle="exclude_subpages_from_nav">
+                        <value><![CDATA[1]]></value>
+                    </attributekey>
+                </attributes>
             </page>
         </pages>
     <?php

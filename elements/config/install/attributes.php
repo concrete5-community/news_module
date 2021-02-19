@@ -24,6 +24,11 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
             </type>
         </attributekey>
 
+        <!-- default attribute, so don't delete it when pkg is deinstalled -->
+        <attributekey handle="exclude_subpages_from_nav" name="Exclude Sub-Pages From Nav" package="" searchable="1" indexed="1" type="boolean" category="collection">
+            <type checked="0"/>
+        </attributekey>
+
         <!-- custom attribute, delete when pkg is deinstalled -->
         <attributekey handle="news_categories" name="News - Categories" package="news_module" searchable="1" indexed="1"
                       type="topics" category="collection">

@@ -243,7 +243,7 @@ if ($components = $service->getFormerNewsComponents()) {
         <div class="form-group">
             <div class="checkbox">
                 <label class="control-label launch-tooltip"
-                   title="<?php echo t('Add a block to show the name of the new article.') ?>">
+                   title="<?php echo t('Add a block to show the name of the news article.') ?>">
                     <?php
                     echo $form->checkbox('naPageTitle', 1, true);
                     ?>

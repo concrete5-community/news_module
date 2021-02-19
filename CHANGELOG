@@ -1,5 +1,10 @@
+1.1
+- Make sure the News page excludes sub pages from navigation.
+- Fix typo in translation.
+
 1.0
 - Approved by PRB.
+- Add missing t-function in post install dialog.
 
 0.9.0
 - Initial PRB submission.
