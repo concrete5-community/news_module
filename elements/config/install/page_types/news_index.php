@@ -58,7 +58,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
                             <?php
                             if (isset($data['niNewsList'])): ?>
-                                <area name="<?php echo $data['niNewsListArea']; ?>">
+                                <area name="<?php echo h($data['niNewsListArea']); ?>">
                                     <blocks>
                                         <block type="page_list" name="" mc-block-id="5b6c95a6">
                                             <data table="btPageList">
@@ -120,7 +120,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
                             <?php
                             if (isset($data['niCategories'])): ?>
-                                <area name="<?php echo $data['niCategoriesArea'] ?>">
+                                <area name="<?php echo h($data['niCategoriesArea']) ?>">
                                     <blocks>
                                         <block type="topic_list" name="" mc-block-id="57b5d33f">
                                             <style>

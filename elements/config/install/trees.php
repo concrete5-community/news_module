@@ -17,7 +17,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
             $topics = array_filter(array_map('trim', $topics));
 
             foreach ($topics as $topic) {
-                echo '<topic name="' . $topic . '"/>';
+                echo '<topic name="' . h($topic) . '"/>';
             }
             ?>
         </tree>

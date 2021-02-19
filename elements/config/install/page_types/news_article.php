@@ -46,7 +46,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
                         <page name="" path="" filename="" pagetype="news_article"
                               template="<?php echo $data['naPageTemplate']; ?>" description="" package="news_module"
                               root="true">
-                            <area name="<?php echo $data['naTitleArea']; ?>">
+                            <area name="<?php echo h($data['naTitleArea']); ?>">
                                 <blocks>
                                     <?php
                                     if (isset($data['naPageTitle'])): ?>
@@ -74,7 +74,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
                                 </blocks>
                             </area>
 
-                            <area name="<?php echo $data['naContentArea']; ?>">
+                            <area name="<?php echo h($data['naContentArea']); ?>">
                                 <blocks>
                                     <?php
                                     if (isset($data['naTextIntro'])): ?>
@@ -137,7 +137,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
                             <?php
                             if (isset($data['naTags'])): ?>
-                                <area name="<?php echo $data['naTagsArea']; ?>">
+                                <area name="<?php echo h($data['naTagsArea']); ?>">
                                     <blocks>
                                         <block type="tags" name="" mc-block-id="9e75297f">
                                             <data table="btTags">
@@ -160,7 +160,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
                             endif;
                             ?>
 
-                            <area name="<?php echo $data['naNavigationArea']; ?>">
+                            <area name="<?php echo h($data['naNavigationArea']); ?>">
                                 <blocks>
                                     <?php
                                     // If no results are shown, it's probably because two pages have been added in the same minute.
@@ -218,7 +218,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
                                 </blocks>
                             </area>
 
-                            <area name="<?php echo $data['naShareArea']; ?>">
+                            <area name="<?php echo h($data['naShareArea']); ?>">
                                 <blocks>
                                     <?php
                                     if (isset($data['naShare'])): ?>
@@ -273,7 +273,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
                             <?php
                             if (isset($data['naConversation'])): ?>
-                                <area name="<?php echo $data['naConversationArea']; ?>">
+                                <area name="<?php echo h($data['naConversationArea']); ?>">
                                     <blocks>
                                         <block type="horizontal_rule" name="" mc-block-id="2f218aa6"/>
                                         <block type="core_conversation" name="" mc-block-id="47b3af51">

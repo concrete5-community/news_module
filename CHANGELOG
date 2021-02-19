@@ -1,3 +1,7 @@
+1.1.1
+- Catch Exception instead of Throwable for PHP 5.6.
+- Use htmlentities to encode XML attributes and prevent an xmlParseEntityRef error.
+
 1.1
 - Make sure the News page excludes sub pages from navigation.
 - Fix typo in translation.

@@ -79,11 +79,11 @@ class Importer implements ApplicationAwareInterface
 
             try {
                 $this->contentImporter->importContentString($xml);
-            } catch (Throwable $t) {
+            } catch (Exception $e) {
                 throw new Exception(
                     t("Import of file '%s' failed: %s. XML: %s",
                         $file,
-                        $t->getMessage() . ' ' . $t->getTraceAsString(),
+                        $e->getMessage() . ' ' . $e->getTraceAsString(),
                         htmlentities($xml)
                     )
                 );
