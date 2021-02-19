@@ -11,7 +11,7 @@ final class Controller extends Package
 {
     protected $pkgHandle = 'news_module';
     protected $appVersionRequired = '8.0';
-    protected $pkgVersion = '1.1.1';
+    protected $pkgVersion = '1.1.2';
     protected $pkgAutoloaderRegistries = [
         'src/NewsModule' => '\A3020\NewsModule',
     ];

@@ -3,22 +3,22 @@
 namespace A3020\NewsModule\Listener;
 
 use Concrete\Core\Database\Connection\Connection;
-use Concrete\Core\Logging\Logger;
 use Exception;
+use Psr\Log\LoggerInterface;
 
 class PageTypePublish
 {
     /**
-     * @var Connection
+     * @var \Concrete\Core\Database\Connection\Connection
      */
     private $db;
 
     /**
-     * @var Logger
+     * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
-    public function __construct(Connection $db, Logger $logger)
+    public function __construct(Connection $db, LoggerInterface $logger)
     {
         $this->db = $db;
         $this->logger = $logger;
@@ -42,7 +42,7 @@ class PageTypePublish
                 $event->getPageObject()
             );
         } catch (Exception $e) {
-            $this->logger->addError($e->getMessage());
+            $this->logger->error($e->getMessage());
         }
     }
 

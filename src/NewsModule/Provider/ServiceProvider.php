@@ -16,7 +16,7 @@ class ServiceProvider implements ApplicationAwareInterface
 
         // When a page is published a few blocks are detached from page type defaults
         $this->app['director']->addListener('on_page_type_publish', function($event) {
-            /** @var PageTypePublish $listener */
+            /** @var \A3020\NewsModule\Listener\PageTypePublish $listener */
             $listener = $this->app->make(PageTypePublish::class);
             $listener->handle($event);
         });

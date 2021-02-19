@@ -8,7 +8,7 @@ use Concrete\Core\Page\PageList;
 class Uninstaller
 {
     /**
-     * @var Request
+     * @var \Concrete\Core\Http\Request
      */
     private $request;
 

@@ -1,25 +1,24 @@
 <?php
 
-namespace A3020\NewsModule\Installer;
+namespace A3020\NewsModule\Import;
 
 use Concrete\Core\Application\ApplicationAwareInterface;
 use Concrete\Core\Application\ApplicationAwareTrait;
 use Concrete\Core\Backup\ContentImporter;
 use Concrete\Core\Cache\Cache;
 use Exception;
-use Throwable;
 
 class Importer implements ApplicationAwareInterface
 {
     use ApplicationAwareTrait;
 
     /**
-     * @var ContentImporter
+     * @var \Concrete\Core\Backup\ContentImporter
      */
     protected $contentImporter;
 
     /**
-     * @var FileLoader
+     * @var \A3020\NewsModule\Import\FileLoader
      */
     private $fileLoader;
 

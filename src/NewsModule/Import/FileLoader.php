@@ -1,13 +1,13 @@
 <?php
 
-namespace A3020\NewsModule\Installer;
+namespace A3020\NewsModule\Import;
 
 use Concrete\Core\View\View;
 
 class FileLoader
 {
     /**
-     * @var View
+     * @var \Concrete\Core\View\View
      */
     private $view;
 

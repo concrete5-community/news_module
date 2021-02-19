@@ -2,6 +2,7 @@
 
 namespace A3020\NewsModule\Installer;
 
+use A3020\NewsModule\Import\Importer;
 use Concrete\Core\Database\Connection\Connection;
 use Concrete\Core\Http\Request;
 use Concrete\Core\Page\Page;
@@ -9,12 +10,12 @@ use Concrete\Core\Page\Page;
 class Installer
 {
     /**
-     * @var Request
+     * @var \Concrete\Core\Http\Request
      */
     private $request;
 
     /**
-     * @var Importer
+     * @var \A3020\NewsModule\Import\Importer
      */
     private $importer;
 
