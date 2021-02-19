@@ -19,5 +19,5 @@ $package = Package::getByHandle('news_module');
 <?php
 $newsPage = Page::getByPath('/news');
 if (is_object($newsPage)) {
-    echo '<a class="btn btn-primary" href="' . $newsPage->getCollectionLink() . '">Visit News</a>';
+    echo '<a class="btn btn-primary" href="' . $newsPage->getCollectionLink() . '">' . t('Visit News') . '</a>';
 }
